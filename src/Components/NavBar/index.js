@@ -1,12 +1,11 @@
 import { Typography, withStyles, AppBar, Toolbar } from '@material-ui/core'
 import React, { Component } from 'react'
-import MenuDrawer from '../MenuDrawer'
 
 const styles = theme=>({
     root:{
         height: "100px",
         boxShadow:'none',
-        backgroundColor:'transparent'
+        backgroundColor:'white',
     },
     menu:{
       display:'fixed',

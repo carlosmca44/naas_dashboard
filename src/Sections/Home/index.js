@@ -14,17 +14,11 @@ const styles = theme=>({
     tabD:{
         maxWidth:'70%',
         margin:'auto auto',
-        marginTop:'6%'
     },
-    tabT:{
-        maxWidth:'70%',
-        margin:'auto auto',
-        marginTop:'10%'
+    tabT:{      
     },
     tabP:{
-        maxWidth:'70%',
-        margin:'auto auto',
-        marginTop:'20%'
+        
     }
 })
 
