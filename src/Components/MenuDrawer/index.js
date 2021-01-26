@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {AccountBox} from "@material-ui/icons";
-import {withStyles, IconButton, Drawer, Tooltip, ButtonGroup, Button} from "@material-ui/core";
+import {withStyles, IconButton, Drawer, Tooltip, Button} from "@material-ui/core";
 
 const styles = theme =>({
     links:{

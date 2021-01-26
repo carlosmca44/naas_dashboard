@@ -1,18 +1,18 @@
-import { withStyles } from '@material-ui/core';
+import { Grid, withStyles } from '@material-ui/core';
 import React, { Component } from 'react';
-import DesktopBreakpoint from '../../Prueba_/Breackpoints/desktopBreakpoint';
-import PhoneBreakpoint from '../../Prueba_/Breackpoints/phoneBreakpoint';
-import TabletBreakpoint from '../../Prueba_/Breackpoints/tabletBreakpoint';
 import LoginComp from '../../Components/LoginComp';
-import Navbar from '../../Components/NavBar';
+import NavBar from '../../Components/NavBar';
+import DesktopBreakpoint from '../../Prueba_/Breackpoints/desktopBreakpoint';
+import TabletBreakpoint from '../../Prueba_/Breackpoints/tabletBreakpoint'
+import PhoneBreakpoint from '../../Prueba_/Breackpoints/phoneBreakpoint'
 
 const styles = theme=>({
 
     //Login
     loginD:{
+      marginTop: '10%',
       display:"flex",
       justifyContent:"center",
-      marginTop: '10%'
     },
     loginT:{
       display:"flex",
@@ -32,29 +32,29 @@ class LoginSection extends Component{
         const {classes} = this.props
         return(
             <div>
+                <NavBar/>
                 <DesktopBreakpoint>
-                    <Navbar/>
-                    <div className={classes.loginD}>
-                        <LoginComp/>
-                    </div>
+                    <Grid className={classes.loginD} container dorection={'column'} justify={'center'} alignItems={'center'}>
+                        <Grid item>
+                            <LoginComp/>
+                        </Grid>
+                    </Grid>
                 </DesktopBreakpoint>
 
                 <TabletBreakpoint>
-                    <Navbar/>
-                    <div className={classes.loginT}>
-
-                    <LoginComp/>
-
-                    </div>
+                    <Grid className={classes.loginT} container dorection={'column'} justify={'center'} alignItems={'center'}>
+                        <Grid item>
+                            <LoginComp/>
+                        </Grid>
+                    </Grid>
                 </TabletBreakpoint>
 
                 <PhoneBreakpoint>
-                    <Navbar/>
-                    <div className={classes.loginP}>
-
-                    <LoginComp/>
-
-                    </div>
+                    <Grid className={classes.loginP} container dorection={'column'} justify={'center'} alignItems={'center'}>
+                        <Grid item>
+                            <LoginComp/>
+                        </Grid>
+                    </Grid>
                 </PhoneBreakpoint>
 
             </div>
