@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {AccountBox} from "@material-ui/icons";
 import {withStyles, IconButton, Drawer, Tooltip, Button} from "@material-ui/core";
+import blue from '@material-ui/core/colors/blue'
+import { red } from "@material-ui/core/colors";
 
 const styles = theme =>({
     links:{
@@ -12,10 +14,11 @@ const styles = theme =>({
     },
     menu:{
         backgroundColor:'transparent',
-        margin:'auto auto',
+        marginLeft:'auto',
+        marginRight:'1%',
         marginTop:'15px',
         marginBottom:'15px'
-    }
+    },
 });
 
 class MenuDrawer extends Component {
@@ -37,7 +40,7 @@ class MenuDrawer extends Component {
     render() {
         const {classes}=this.props;
         return(
-            <div className="positionMenu">
+            <div>
                 <Tooltip title={'Usuario'}>
                     <IconButton
                         onClick={this.toggleDrawerState}
@@ -55,8 +58,8 @@ class MenuDrawer extends Component {
 
                         <div className={classes.menu}>
 
-                            <Button>Usuario</Button>
-                            <Button>Salir</Button>
+                            <Button color='primary'>Usuario</Button>
+                            <Button color={red[500]}>Salir</Button>
 
                         </div>
 

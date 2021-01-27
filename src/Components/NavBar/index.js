@@ -8,8 +8,8 @@ const styles = theme=>({
         backgroundColor:'white',
     },
     menu:{
-      display:'fixed',
-      margin:'auto'
+      position:'relative',
+      marginLeft:'auto'
     }
 })
 
