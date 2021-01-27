@@ -29,8 +29,8 @@ class CardView extends Component{
                     title='App'
                 />
                 
-                    <Button className={classes.content}>Modificar</Button>
-                    <Button className={classes.content}>Eliminar</Button>
+                    <Button className={classes.content} color={'secondary'}>Modificar</Button>
+                    <Button className={classes.content} color={'secondary'}>Eliminar</Button>
                
             </Card>
         )

@@ -12,6 +12,15 @@ const theme = createMuiTheme({
     secondary:{
       main:'#008CFF'
     }
+  },
+  overrides:{
+    MuiButton:{
+      colorInherit:{
+        color:'secondary',
+      }
+    }
+      
+    
   }
 })
 
