@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {AccountBox} from "@material-ui/icons";
 import {withStyles, IconButton, Drawer, Tooltip, Button} from "@material-ui/core";
-import blue from '@material-ui/core/colors/blue'
 import { red } from "@material-ui/core/colors";
 
 const styles = theme =>({
