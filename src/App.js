@@ -29,6 +29,7 @@ const theme = createMuiTheme({
     MuiTab:{
       selected:{
         backgroundColor:'#008CFF',
+        color:'white'
       },
       root:{
         backgroundColor:'secondary',
@@ -39,7 +40,7 @@ const theme = createMuiTheme({
     },
     MuiTabs:{
       indicator:{
-        height:5
+        backgroundColor:'transparent'
       },
     }
   }
