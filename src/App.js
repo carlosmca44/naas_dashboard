@@ -29,6 +29,7 @@ const theme = createMuiTheme({
     MuiTab:{
       root:{
         backgroundColor:'secondary',
+        color:'#FFFFFF',
         margin:'0.2% 0.2% 0.2% 0.2%',
         border:'1px black solid',
         borderBottom:'0px',
