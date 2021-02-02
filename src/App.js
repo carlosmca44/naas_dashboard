@@ -35,8 +35,8 @@ const theme = createMuiTheme({
         borderBottom:'0px',
       },
       selected:{
-        
-        color:'#FFFFFF'
+        textDecorationColor:'#FFFFFF',
+        backgroundColor:'#008CFF',
       },
     },
     MuiTabs:{
