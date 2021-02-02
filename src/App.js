@@ -34,14 +34,11 @@ const theme = createMuiTheme({
         border:'1px black solid',
         borderBottom:'0px',
       },
-      selected:{
-        
-        color:'#FFFFFF'
-      },
     },
     MuiTabs:{
       indicator:{
-        backgroundColor:'transparent'
+        height:5,
+        backgroundColor:'#008CFF'
       },
     }
   }
