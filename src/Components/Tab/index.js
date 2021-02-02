@@ -74,7 +74,15 @@ const useStyles = makeStyles(theme => ({
     }
   },
   tab:{
-    
+    [theme.breakpoints.down("sm")]:{
+      margin:0,
+      border:0,
+    }
+  },
+  tabs:{
+    [theme.breakpoints.down("sm")]:{
+      margin:'auto auto'
+    }
   }
 }));
 
@@ -95,6 +103,7 @@ export default function FullWidthTabs() {
     <div className={classes.root}>
         <AppBar className={classes.appBar} position="static" color="default">
           <Tabs
+            className={classes.tabs}
             value={value}
             onChange={handleChange}
             indicatorColor="primary"
@@ -102,9 +111,9 @@ export default function FullWidthTabs() {
             variant='standard'
             aria-label="full width tabs example"
           >
-            <Tab label="Aplicaciones" {...a11yProps(0)} />
-            <Tab label="Disponibles" {...a11yProps(1)} />
-            <Tab label="Usuarios" {...a11yProps(2)} />
+            <Tab className={classes.tab} label="Aplicaciones" {...a11yProps(0)} />
+            <Tab className={classes.tab} label="Disponibles" {...a11yProps(1)} />
+            <Tab className={classes.tab} label="Usuarios" {...a11yProps(2)} />
           </Tabs>
         </AppBar>
         <SwipeableViews

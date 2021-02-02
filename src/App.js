@@ -27,16 +27,16 @@ const theme = createMuiTheme({
       }
     },
     MuiTab:{
-      selected:{
-        backgroundColor:'#008CFF',
-        color:'white'
-      },
       root:{
         backgroundColor:'secondary',
         margin:'0.2% 0.2% 0.2% 0.2%',
         border:'1px black solid',
         borderBottom:'0px',
-      }
+      },
+      selected:{
+        backgroundColor:'#008CFF',
+        color:'#FFFFFF'
+      },
     },
     MuiTabs:{
       indicator:{
