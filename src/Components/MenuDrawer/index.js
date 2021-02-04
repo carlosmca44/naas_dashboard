@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {AccountBox} from "@material-ui/icons";
 import {withStyles, IconButton, Drawer, Tooltip, Button} from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { red } from "@material-ui/core/colors";
 
 const styles = theme =>({
@@ -58,7 +59,9 @@ class MenuDrawer extends Component {
                         <div className={classes.menu}>
 
                             <Button color='primary'>Usuario</Button>
-                            <Button href='/' color={red[500]}>Salir</Button>
+                            <Link to='/'>
+                                <Button color={red[400]}>Salir</Button>
+                            </Link>
 
                         </div>
 

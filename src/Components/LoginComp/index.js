@@ -1,5 +1,6 @@
 import { Button, Card, Divider, Grid, TextField, Typography, withStyles } from '@material-ui/core'
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 const styles = theme=>({
     root:{
@@ -52,8 +53,10 @@ class Login extends Component{
 
                     <Grid item>
                         <a className={classes.spacing} href='/#'>Forgot Password?</a>
-                    
-                        <Button className={classes.spacing} href='/home'>Sign In</Button>
+                        
+                        <Link to='/home'>
+                            <Button className={classes.spacing}>Sign In</Button>
+                        </Link>
                     </Grid>
 
                 </Grid>
